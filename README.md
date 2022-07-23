@@ -31,7 +31,7 @@
   <dependency>
     <groupId>com.github.CrAfTsArMy</groupId>
     <artifactId>CraftsCore_Minecraft</artifactId>
-    <version>v2.0.0-SNAPSHOT</version>
+    <version>v2.0.1-SNAPSHOT</version>
   </dependency>
   <dependency>
     <groupId>com.squareup.okhttp3</groupId>
@@ -64,7 +64,7 @@ repositories {
 dependencies {
   ...
   implementation 'com.github.CrAfTsArMy:CraftsCore:v3.4.8-SNAPSHOT'
-  implementation 'com.github.CrAfTsArMy:CraftsCore_Minecraft:v2.0.0-SNAPSHOT'
+  implementation 'com.github.CrAfTsArMy:CraftsCore_Minecraft:v2.0.1-SNAPSHOT'
   implementation 'club.minnced:java-discord-rpc:2.0.2'
   implementation 'com.squareup.okhttp3:okhttp:4.10.0'
   implementation 'com.google.code.gson:gson:2.9.0'
