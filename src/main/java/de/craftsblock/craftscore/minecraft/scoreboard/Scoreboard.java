@@ -94,7 +94,7 @@ public class Scoreboard {
             }
 
         if (need$animation)
-            animation = Bukkit.getScheduler().runTaskTimerAsynchronously(
+            animation = Bukkit.getScheduler().runTaskTimer(
                     Minecraft.instance().plugin(),
                     animation$runnable,
                     0,
@@ -109,7 +109,7 @@ public class Scoreboard {
     public void setInterval(int animation$interval) {
         if (animation != null) {
             animation.cancel();
-            animation = Bukkit.getScheduler().runTaskTimerAsynchronously(
+            animation = Bukkit.getScheduler().runTaskTimer(
                     Minecraft.instance().plugin(),
                     animation$runnable,
                     0,
