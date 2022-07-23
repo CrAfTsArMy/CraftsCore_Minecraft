@@ -10,7 +10,7 @@ public class Minecraft {
 
     public void init(Plugin plugin) {
         try {
-            Class.forName("org.bukkit");
+            Class.forName("org.bukkit.Bukkit");
         } catch (Exception e) {
             e.printStackTrace();
             return;
