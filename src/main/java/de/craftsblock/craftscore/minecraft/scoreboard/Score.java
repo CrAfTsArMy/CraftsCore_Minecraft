@@ -2,6 +2,7 @@ package de.craftsblock.craftscore.minecraft.scoreboard;
 
 import de.craftsarmy.craftscore.buildin.animate.Animator;
 import org.bukkit.scoreboard.Team;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
@@ -27,21 +28,17 @@ public class Score {
             this.identifier.append("§").append(tile);
     }
 
+    @Nullable
     public String content() {
-        if(animated)
-            throw new IllegalStateException("Score is animated!");
         return content;
     }
 
     public void setTarget(Team animationTarget) {
-        if (!animated)
-            throw new IllegalStateException("Score is not animate able!");
         this.animationTarget = animationTarget;
     }
 
+    @Nullable
     public Team target() {
-        if (!animated)
-            throw new IllegalStateException("Score is not animate able!");
         return animationTarget;
     }
 
@@ -49,15 +46,13 @@ public class Score {
         return animated;
     }
 
+    @Nullable
     public Animator<String> animator() {
-        if (!animated)
-            throw new IllegalStateException("Score is not animate able!");
         return animator;
     }
 
+    @Nullable
     public String identifier() {
-        if (!animated)
-            throw new IllegalStateException("Score is not animate able!");
         return identifier.toString();
     }
 

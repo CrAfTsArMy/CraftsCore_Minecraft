@@ -31,14 +31,14 @@ public class Scoreboard {
         animation$runnable = () -> {
             for (Map.Entry<Integer, Score> e : scores.entrySet()) {
                 Score obj = e.getValue();
-                String current = obj.animator().cycleGet();
+                String current = Objects.requireNonNull(obj.animator()).cycleGet();
                 ScoreChangeEvent event = new ScoreChangeEvent(owner, current);
                 Bukkit.getPluginManager().callEvent(event);
                 if (!event.isCancelled()) {
-                    obj.target().setPrefix(event.getContent());
+                    Objects.requireNonNull(obj.target()).setPrefix(event.getContent());
                     continue;
                 }
-                obj.target().setPrefix(current);
+                Objects.requireNonNull(obj.target()).setPrefix(current);
             }
         };
     }
@@ -52,18 +52,16 @@ public class Scoreboard {
         return this;
     }
 
-    public Scoreboard show() {
+    public void show() {
         if (!build)
             throw new IllegalStateException("The Scoreboard must be built first by using \"build(String)\"");
         owner.setScoreboard(scoreboard);
-        return this;
     }
 
-    public Scoreboard hide() {
+    public void hide() {
         if (!build)
             throw new IllegalStateException("The Scoreboard must be built first by using \"build(String)\"");
         owner.setScoreboard(Objects.requireNonNull(Bukkit.getScoreboardManager()).getMainScoreboard());
-        return this;
     }
 
     public Scoreboard build(String display$name) {
@@ -78,8 +76,8 @@ public class Scoreboard {
         for (int key : scores.keySet())
             if (scores.get(key).animated()) {
                 Team team = board.registerNewTeam(UUID.randomUUID().toString());
-                team.addEntry(scores.get(key).identifier());
-                obj.getScore(scores.get(key).identifier()).setScore(key);
+                team.addEntry(Objects.requireNonNull(scores.get(key).identifier()));
+                obj.getScore(Objects.requireNonNull(scores.get(key).identifier())).setScore(key);
                 scores.get(key).setTarget(team);
                 need$animation = true;
             } else {
@@ -90,6 +88,7 @@ public class Scoreboard {
                     obj.getScore(event.getContent()).setScore(key);
                     continue;
                 }
+                assert content != null;
                 obj.getScore(content).setScore(key);
             }
 

@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class PlaceholderManager {
 
-    private static ConcurrentHashMap<String, AbstractPlaceholder> placeholder;
+    private static final ConcurrentHashMap<String, AbstractPlaceholder> placeholder = new ConcurrentHashMap<>();
 
     public static void register(AbstractPlaceholder placeholder) {
         if (!isRegistered(placeholder))
