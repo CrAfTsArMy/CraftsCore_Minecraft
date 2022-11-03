@@ -31,6 +31,8 @@ public class Scoreboard {
         animation$runnable = () -> {
             for (Map.Entry<Integer, Score> e : scores.entrySet()) {
                 Score obj = e.getValue();
+                if (!obj.animated())
+                    continue;
                 String current = Objects.requireNonNull(obj.animator()).cycleGet();
                 ScoreChangeEvent event = new ScoreChangeEvent(owner, current);
                 Bukkit.getPluginManager().callEvent(event);

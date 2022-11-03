@@ -1,6 +1,6 @@
 package de.craftsblock.craftscore.minecraft.scoreboard;
 
-import de.craftsarmy.craftscore.buildin.animate.Animator;
+import de.craftsblock.craftscore.buildin.animate.Animator;
 import org.bukkit.scoreboard.Team;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,7 +13,7 @@ public class Score {
 
     private final boolean animated;
     private Team animationTarget;
-    private final StringBuilder identifier = new StringBuilder();
+    private StringBuilder identifier = new StringBuilder();
 
     public Score(String content) {
         this.content = content;
@@ -25,7 +25,8 @@ public class Score {
         this.animated = true;
         String[] tiles = UUID.randomUUID().toString().split("");
         for (String tile : tiles)
-            this.identifier.append("§").append(tile);
+            this.identifier.append("\u00A7").append(tile);
+        this.identifier = new StringBuilder(this.identifier.toString().replace("\u00c2", ""));
     }
 
     @Nullable
