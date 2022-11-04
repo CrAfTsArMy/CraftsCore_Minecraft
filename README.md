@@ -64,17 +64,17 @@ Kennst du CraftsBlock schon? Wir sind ein kleines Team, welches für euch kosten
 
 Du möchtest bei CraftsBlock mitwirken? Wir nehmen jederzeit neue Teammitglieder auf!
 
-**👮‍♂️Moderator**
-• Du solltest das 14. Lebensjahr erreicht haben
-• Gute Menschenkenntnis besitzen
+**👮‍♂️Moderator**<br>
+• Du solltest das 14. Lebensjahr erreicht haben<br>
+• Gute Menschenkenntnis besitzen<br>
 • Aktiv sein
 
-**👨‍💻 Developer**
-• Du solltest das 13. Lebensjahr erreicht haben
-• Kenntnisse in mindestens einer Programmiersprache
+**👨‍💻 Developer**<br>
+• Du solltest das 13. Lebensjahr erreicht haben<br>
+• Kenntnisse in mindestens einer Programmiersprache<br>
 • Aktiv sein
 
-**👷‍♂️ Content**
-• Du solltest das 13. Lebensjahr erreicht haben
-• Kenntnisse im schreiben von Konzepten
+**👷‍♂️ Content**<br>
+• Du solltest das 13. Lebensjahr erreicht haben<br>
+• Kenntnisse im schreiben von Konzepten<br>
 • Aktiv sein
