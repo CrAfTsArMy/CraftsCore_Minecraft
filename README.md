@@ -1,5 +1,5 @@
 # CraftsCore
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/CrAfTsArMy/CraftsCore_Minecraft)
+![Latest Release on Maven](https://repo.craftsblock.de/api/badge/latest/releases/de/craftsblock/craftscore/CraftsCore_Minecraft?color=40c14a&name=CraftsCore&prefix=v)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CrAfTsArMy/CraftsCore_Minecraft)
 ![GitHub](https://img.shields.io/github/license/CrAfTsArMy/CraftsCore_Minecraft)
 ![GitHub all releases](https://img.shields.io/github/downloads/CrAfTsArMy/CraftsCore_Minecraft/total)
@@ -10,8 +10,9 @@
 <repositories>
   ...
   <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
+    <id>craftsblock-releases</id>
+    <name>CraftsBlock Repositories</name>
+    <url>https://repo.craftsblock.de/releases</url>
   </repository>
   <repository> 
     <id>jcenter</id>
@@ -24,29 +25,14 @@
 <dependencies>
   ...
   <dependency>
-    <groupId>com.github.CrAfTsArMy</groupId>
+    <groupId>de.craftsblock.craftscore</groupId>
     <artifactId>CraftsCore</artifactId>
-    <version>v3.4.8-SNAPSHOT</version>
+    <version>3.5.1-SNAPSHOT</version>
   </dependency>
   <dependency>
-    <groupId>com.github.CrAfTsArMy</groupId>
+    <groupId>de.craftsblock.craftscore</groupId>
     <artifactId>CraftsCore_Minecraft</artifactId>
-    <version>v2.0.3-SNAPSHOT</version>
-  </dependency>
-  <dependency>
-    <groupId>com.squareup.okhttp3</groupId>
-    <artifactId>okhttp</artifactId>
-    <version>4.10.0</version>
-  </dependency>
-  <dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.9.0</version>
-  </dependency>
-  <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.29</version>
+    <version>3.0.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
@@ -55,7 +41,7 @@
 ```gradle
 repositories {
   ...
-  maven { url 'https://jitpack.io' }
+  maven { url "https://repo.craftsblock.de/releases" }
   mavenCentral()
   jcenter()
 }
@@ -63,12 +49,8 @@ repositories {
 ```gradle
 dependencies {
   ...
-  implementation 'com.github.CrAfTsArMy:CraftsCore:v3.4.8-SNAPSHOT'
-  implementation 'com.github.CrAfTsArMy:CraftsCore_Minecraft:v2.0.3-SNAPSHOT'
-  implementation 'club.minnced:java-discord-rpc:2.0.2'
-  implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-  implementation 'com.google.code.gson:gson:2.9.0'
-  implementation 'mysql:mysql-connector-java:8.0.29'
+  implementation "de.craftsblock.craftscore:CraftsCore:3.5.1-SNAPSHOT"
+  implementation "de.craftsblock.craftscore:CraftsCore_Minecraft:3.0.0-SNAPSHOT"
 }
 ```
 
