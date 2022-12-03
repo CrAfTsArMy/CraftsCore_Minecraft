@@ -49,8 +49,8 @@ repositories {
 ```gradle
 dependencies {
   ...
-  implementation "de.craftsblock.craftscore:CraftsCore:3.5.1-SNAPSHOT"
-  implementation "de.craftsblock.craftscore:CraftsCore_Minecraft:3.0.0-SNAPSHOT"
+  implementation "de.craftsblock.craftscore:CraftsCore:X.X.X-SNAPSHOT"
+  implementation "de.craftsblock.craftscore:CraftsCore_Minecraft:X.X.X-SNAPSHOT"
 }
 ```
 
