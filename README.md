@@ -27,12 +27,12 @@
   <dependency>
     <groupId>de.craftsblock.craftscore</groupId>
     <artifactId>CraftsCore</artifactId>
-    <version>3.5.1-SNAPSHOT</version>
+    <version>X.X.X-SNAPSHOT</version>
   </dependency>
   <dependency>
     <groupId>de.craftsblock.craftscore</groupId>
     <artifactId>CraftsCore_Minecraft</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>X.X.X-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
