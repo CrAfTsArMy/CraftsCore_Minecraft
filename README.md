@@ -1,9 +1,12 @@
-# CraftsCore
+# CraftsCore Minecraft
 ![Latest Release on Maven](https://repo.craftsblock.de/api/badge/latest/releases/de/craftsblock/craftscore/CraftsCore_Minecraft?color=40c14a&name=CraftsCore&prefix=v)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/CrAfTsArMy/CraftsCore_Minecraft)
 ![GitHub](https://img.shields.io/github/license/CrAfTsArMy/CraftsCore_Minecraft)
 ![GitHub all releases](https://img.shields.io/github/downloads/CrAfTsArMy/CraftsCore_Minecraft/total)
 ![GitHub issues](https://img.shields.io/github/issues-raw/CrAfTsArMy/CraftsCore_Minecraft)
+
+### Important!
+There will be no more updates (except bug fixes) for the CraftsCore Minecraft plugin from the current point of view!
 
 ### Maven
 ```xml
