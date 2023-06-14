@@ -6,7 +6,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/CrAfTsArMy/CraftsCore_Minecraft)
 
 ### Important!
-There will be no more updates (except bug fixes) for the CraftsCore Minecraft plugin from the current point of view!
+There will be no more updates (except bug fixes) for the CraftsCore Minecraft plugin from the current point of view! (Does not work with newer CraftsCore versions anymore! Use at your own risk)
 
 ### Maven
 ```xml
